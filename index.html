@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Javascript Crash Course -->
+    <title>Javascript on Steroids</title>
+
+
+</head>
+
+<body>
+    <!-- Challenge 1: Your Age in Days -->
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onClick="ageInDays()">Click me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onClick="resetAll()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- Challenge 2: Cat Generator -->
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" onClick="catGenerator()" id="cat-gen-btn">Generate Cat</button>
+        <div class="flex-box-container-2" id="cat-gen-div"></div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------ -->
+
+    <!-- Challenge 3: Rock, Paper, Scissor -->
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissor</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="images/rockimg.png" alt="Rock-Img" id="rock" width="225px" onClick="rpsGame(this)">
+            <img src="images/paperimg.jpg" alt="Paper-Img" id="paper" width="225px" onClick="rpsGame(this)">
+            <img src="images/scissorimg.jpg" alt="Scissor-Img" id="scissor" width="225px" onClick="rpsGame(this)">
+        </div>
+
+        <div>
+            <button class="btn btn-success" onClick="reset()">Restart Game</button>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------ -->
+
+    <!-- Challenge 4: Change The Color Of All Buttons -->
+
+    <!-- <div class="container-4">
+        <h2>Challenge 4: Change The Color Of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onChange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Woo!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class=" btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div> -->
+
+    <!-- ------------------------------------------------------------------------------------------ -->
+
+
+    <div class="container-4">
+        <h2>Challenge 4: Change The Color Of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <h1></h1>
+            <form action="">
+                <select id="background" onChange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Woo!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/app.js"></script>
+    <!-- <script>
+            var students = `[
+                {
+                    "firstName": "Rabeet",
+                    "lastName": "Khan",
+                    "age": 20,
+                    "height": 150
+                },
+                {
+                    "firstName": "Talal",
+                    "lastName": "Khan",
+                    "age": 20,
+                    "height": 150
+                }
+            ]`
+                console.log(JSON.parse(students)[1].lastName);
+                
+        </script> -->
+</body>
+
+</html>
